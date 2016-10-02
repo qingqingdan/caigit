@@ -1,0 +1,14 @@
+.footer{width:1349px;height:200px;margin:0 auto;}
+.footer .top{width:100%;height:60%;background-color:#444656;position:relative;}
+.footer .top .flogo{display:inline-block;margin-left:20%;margin-top:2%;}
+.footer .top .pp{width:15%;height:100%;position: absolute;top:2%;left:34%;}
+.footer .top .pp p{height:27px;}
+.footer .top .pp .p1{color:yellow;font-size:22px;margin-top:8%;}
+.footer .top .pp .p2{color:white;font-size:18px;font-weight:bold;}
+.footer .top .pp .p3{color:white;font-size:14px;}
+.footer .top .fwei{width:40%;height:100%;position: absolute;left:55%;top:0%;}
+.footer .top .fwei img{margin-left:14%;margin-top:6%;}
+.footer .top .fwei .pp2{position:absolute;top:25%;left:30%;}
+.footer .top .fwei .pp2 p{color:white;font-size:14px;}
+.footer .top .fwei .pp2 p span{color:yellow;}
+.footer .next{width:100%;height:40%;text-align:center;color:white;background-color:#2d303f;padding-top:2%;}

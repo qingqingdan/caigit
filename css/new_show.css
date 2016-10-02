@@ -1,0 +1,53 @@
+*{margin:0;padding:0;}
+/*=========header======*/
+.header{width:1349px;height:400px !important;position:relative;margin:0 auto;}
+.header .banner{width:70%;height:20%;position: absolute;top:5%;left:15%;background-color:rgba(255,255,255,0.7);border-radius:10px;}
+.header .banner img{float:left;margin-left:5%;margin-top:1.2%;width:15%;height:75%;display:block;}
+.header .banner .top_nav{float:right;width:75%;height:100%;}
+.header .banner .top_nav li{float:left;width:20%;height:100%;}
+.header .banner .top_nav li a{display:block;width:100%;height:100%;color:black;text-align:center;line-height:82px;font-size:20px;}
+.header .banner .top_nav li a.selected{color:red;}
+.header .banner .top_nav li a:hover{color:red;}
+.header .banner .top_nav li:hover>.next_nav{display:block;}
+.header .banner .top_nav .next_nav{width:80%;margin-left:10%;overflow:hidden;border-radius:0 0 7px 7px;display:none;}
+.header .banner .top_nav .next_nav li{width:100%;}
+.header .banner .top_nav .next_nav li a{display:block;font-size:16px;line-height:30px;background-color:rgba(255,255,255,0.9);}
+.header .banner .top_nav .next_nav li a:hover{background:rgba(234,230,230,0.8);}
+.header .lunbo{width:100%;height:100%;position:relative;}
+.header .lunbo img{transition:1s all linear;opacity:0;width:100%;position:absolute;top:0;left:0;font-size:0;display:block;width:100%;height:100%;}
+.header .lunbo img.selected{opacity:1;}
+.header span{cursor:pointer;position:absolute;top:40%;width:5%;height:15%;color:white;text-align:center;line-height:80px;font-size:70px;text-shadow:0 0 2px black;}
+.header span#left{left:5%;}
+.header span#right{right:5%;}
+.header .text{width:100%;height:15%;background-color:#d8caad;font-size:40px;text-align:center;color:white;line-height:90px;
+	letter-spacing:3px;text-shadow:0 0 2px black;font-weight:bold;/*position:absolute;bottom:0%;*/}
+/*=========content==========*/
+.content{width:1000px;height:1300px;border:1px solid transparent;margin:0 auto;background:#fafaf9;box-shadow:0 0 10px #d7d5d5 inset;}
+.content .word{width:70%;height:9%;margin-left:15%;}
+.content .word a{margin-top:3%;color:#5a5a5a;font-weight:bold;width:100%;height:100%;text-align:center;display:block;font-size:30px;}
+.content .word a span:nth-child(1){font-size:25px;}
+.content .word a span:nth-child(3){font-size:13px;display:block;font-weight:normal;}
+.content .position{float:right;margin-right:50px;margin-bottom:10px;}
+.content .position a{color:black;}
+.content .position a:hover{color:red;}
+.content .line{width:100%;height:10px;background:#e9e3ae;clear:both;}
+
+.content ul{width:75%;margin-left:15%;margin-top:2%;height:80%;}
+.content ul li{width:95%;height:24%;border-bottom:1px dotted gray;overflow:hidden;margin-top:1.2%;}
+.content ul li:last-child{border:none;}
+.content ul li .left{float: left;width:25%;height:90%;perspective:4000px;margin-left:1%;margin-top:2%;}
+.content ul li .left .leftinfo{position: relative;transform-style:preserve-3d;transition:transform 0.6s;width:100%;height:100%;}
+.content ul li .left:hover .leftinfo{transform:rotateY(-90deg);}
+.content ul li .left .leftinfo img{width:100%;height:96%;transition:0.5s all linear;transform: translateZ(90px);position:absolute;top:0;left:0;}
+.content ul li .left:hover img{box-shadow: none; border-radius: 15px;opacity: 0;box-shadow:0 0 10px rgba(0, 0, 0, 0.3);}
+.content ul li .left span{ transform: rotateY(90deg) translateZ(100px);
+    transition: all .6s;display: block; top: 0; text-align:center;border-radius: 15px;font-size: 20px;width:100%;height:64%;color:#666;font-weight:bold;padding-top:70px;opacity: 0;}
+.content ul li .left:hover span{ box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;border:1px solid #ccc;opacity:1;left:10%;}
+.content ul li .text{float:right;width:70%;height:85%;padding:10px;}
+.content ul li .text a{color:#3a3838;font-size:24px;}
+.content ul li .text a:hover{text-decoration:underline;color:#f3989c;}
+.content ul li .text p{color:gray;font-size:18px;}
+.content .more{float:right;margin-right:15%;position:relative;width:10%;}
+.content .more a img{position: absolute;top:2px;right:0;}
+.content .more a span{font-size:20px;display:inline-block}

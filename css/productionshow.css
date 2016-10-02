@@ -1,0 +1,60 @@
+/*=========header======*/
+.header{width:1349px;height:400px !important;position:relative;margin:0 auto;}
+.header .banner{width:70%;height:20%;position: absolute;top:5%;left:15%;background-color:rgba(255,255,255,0.7);border-radius:10px;}
+.header .banner img{float:left;margin-left:5%;margin-top:1.2%;width:15%;height:75%;display:block;}
+.header .banner .top_nav{float:right;width:75%;height:100%;}
+.header .banner .top_nav li{float:left;width:20%;height:100%;}
+.header .banner .top_nav li a{display:block;width:100%;height:100%;color:black;text-align:center;line-height:82px;font-size:20px;}
+.header .banner .top_nav li a.selected{color:red;}
+.header .banner .top_nav li a:hover{color:red;}
+.header .banner .top_nav li:hover>.next_nav{display:block;}
+.header .banner .top_nav .next_nav{width:80%;margin-left:10%;overflow:hidden;border-radius:0 0 7px 7px;display:none;}
+.header .banner .top_nav .next_nav li{width:100%;}
+.header .banner .top_nav .next_nav li a{display:block;font-size:16px;line-height:30px;background-color:rgba(255,255,255,0.9);}
+.header .banner .top_nav .next_nav li a:hover{background:rgba(234,230,230,0.8);}
+.header .lunbo{width:100%;height:100%;position:relative;}
+.header .lunbo img{transition:1s all linear;opacity:0;width:100%;position:absolute;top:0;left:0;font-size:0;display:block;width:100%;height:100%;}
+.header .lunbo img.selected{opacity:1;}
+.header span{cursor:pointer;position:absolute;top:40%;width:5%;height:15%;color:white;text-align:center;line-height:80px;font-size:70px;text-shadow:0 0 2px black;}
+.header span#left{left:5%;}
+.header span#right{right:5%;}
+.header .text{width:100%;height:15%;background-color:#d8caad;font-size:40px;text-align:center;color:white;line-height:90px;
+	letter-spacing:3px;text-shadow:0 0 2px black;font-weight:bold;/*position:absolute;bottom:0%;*/}
+/*===========content===========*/
+.content{width:1349px;background:#eeefef;margin:0 auto;}
+.content .contentmain{width:1000px;height:1200px;background:#fafaf9;box-shadow:0 0 10px #959595;margin:0 auto;}
+.content .word{width:70%;height:10%;margin-left:15%;border:1px solid transparent;}
+.content .word a{margin-top:3%;color:#5a5a5a;font-weight:bold;width:100%;height:100%;text-align:center;display:block;font-size:30px;}
+.content .word a span:nth-child(1){font-size:25px;}
+.content .word a span:nth-child(3){font-size:13px;display:block;font-weight:normal;}
+.content .position{float:right;margin-right:50px;margin-bottom:10px;}
+.content .position a{color:black;}
+.content .position a:hover{color:red;}
+.content .line{width:100%;height:10px;background:#e9e3ae;clear:both;}
+.content .product{width:90%;height:23%;border:2px solid #ccc;box-shadow:0 0 10px #cacbce inset;margin:0 auto;border-radius:20px;margin-top:2%;}
+.content .product .aa{float:left;width:200px;height:200px;margin-top:4%;margin-left:4%;}
+.content .product .aa .pic{width:200px;height:200px;/*border:1px solid blue;*/border-radius:50%;position:relative;}
+.content .product .aa .pic img{width:100%;height:100%;border-radius:50%;transition:0.2s all linear;position:absolute;top:0;left:0;}
+.content .product .aa .pic .info{width:200px;height:200px;border-radius:50%;background:rgba(75,83,122,0.6);position:absolute;top:0;left:-100%;transition:0.2s all linear;opacity:0;text-align:center;}
+.content .product .aa .pic .info span{color:white;font-size:28px;padding-top:55px;display:block;font-family: "微软雅黑";font-weight:bold;}
+.content .product .aa .pic .info hr{color:white;width:100%;}
+.content .product .aa:hover img{animation:dohu2 0.5s linear forwards;}
+.content .product .aa:hover .info{animation:dohu3 0.5s linear forwards;}
+@keyframes dohu2{
+	0%{transform:scale(1);left:0;opacity:1}
+	50%{transform:scale(0.5);left:0;opacity:0.6}
+	100%{transform:scale(0.5);left:100%;opacity:0}
+}	
+@keyframes dohu3{
+	0%{transform:scale(0.5);left:-100%;opacity:0;}
+	50%{transform:scale(0.5);left:-100%;opacity:0.6}
+	80%{transform:scale(0.5);left:0;opacity:0.6}
+	100%{transform:scale(1);left:0;opacity:1}
+}
+.content .product .text{width:60%;height:80%;float:right;margin-right:5%;margin-top:3%;}
+.content .product .text h1{color:#444;font-size:28px;width:100%;text-align:center;cursor: pointer;}
+.content .product .text h1:hover{color:#5e6799;}
+.content .product .text p{color:#777;font-size:20px;text-indent:2em;}
+.content .more{float:right;margin-right:10%;position:relative;width:10%;margin-top: 5%;}
+.content .more a img{position: absolute;top:2px;right:0;}
+.content .more a span{font-size:20px;display:inline-block}
